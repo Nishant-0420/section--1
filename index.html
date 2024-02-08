@@ -7,24 +7,66 @@
     <title>Document</title>
     <!-- fn+F1 to add google font -->
     <link href="https://fonts.googleapis.com/css?family=Protest+Revolution:regular" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
+        :root{
+            --theme-color :#129ebd
+            /* -- is main to declare the variable and uske baad tum kuch bhi likho */
+        }
         header{
-            background-image:url('https://i.natgeofe.com/n/e484088d-3334-4ab6-9b75-623f7b8505c9/1086.jpg?w=1084.125&h=813.75') ;
+            background-image:url('https://as1.ftcdn.net/v2/jpg/02/80/62/66/1000_F_280626631_EvPOmGCOVgXKT74x5GvYv6zn2BdLXHvb.jpg') ;
             height: 70vh;
             color: whitesmoke;
             background-size: cover;
             text-align: center;
+            /* padding: 100px;
+            box-sizing: border-box; here adding padding while not increase header size becuz of box-sizing*/
             
         }
         .hero{
             margin: 0;
             font-family: Protest Revolution;
+            padding-top: 35px;
         }
         .hero-subtitle{
+            margin-top: 70px;
             text-align: center;
+            color: brown;
         }
+        .hero-btn{
+            padding: 20px 30px;
+            border-radius: 5px;
+            border: none;
+            margin-top: 100px;
+        }
+
         body{
             margin: 0;
+        }
+        .feature-card:hover{
+            background-color: var(--theme-color);
+            color: white;
+            /* under hover background color become the feautre color and to view the feature we use white if we do not use then the background and content color will match and no view will be their */
+        }
+        .section-features{
+            color: var(--theme-color);
+            font-family: Protest Revolution;
+
+        }
+        .card-container{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .section-heading{
+         text-align: center;
+         
+         font-size: 3rem;
+        }
+        .feature-card{
+        transition: 1s;
+        text-align: center;
+        padding: 50px; 
+        
         }
         
     </style>
@@ -33,11 +75,34 @@
     <header>
         <h1 class="hero" style="text-align: center;">main heading</h1>
         
-        <h3 class="hero-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur perferendis nesciunt culpa aliquid sed consequatur ut, perspiciatis necessitatibus! Quas, quia labore neque sapiente illum dicta necessitatibus cumque! Mollitia voluptates aut, nostrum aliquam odit dolorem ipsa sapiente cum consequatur dignissimos vitae magni culpa iure ex quidem, atque, unde quibusdam dolorum! Optio atque, saepe fugit eveniet amet consectetur iste quae neque voluptas.</h3>
+        <h3 class="hero-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, beatae inventore nostrum provident animi deleniti eos quia alias nesciunt saepe, deserunt, iure excepturi ducimus blanditiis expedita ipsam vel quisquam ipsa.</h3>
          <button class="hero-btn" >button</button>
     </header>
     <main>
+    <section class="section-features">
+        <h2 class="section-heading">OUR OUTSTANDING FEATURES</h2>
+        <div class="card-container">
+        <div class="feature-card">
+            <!-- to put icon we copy the icon code from fontawesome and don't forget to copy the link from font awesome cdn to import the icons -->
+            <i class=" fa-2x fa-solid fa-rocket"></i>
+            <!-- fa-2x is added to increase the size of the icon -->
+            <p>Lorem ipsum dolor sit amet.</p>
+         </div>
+         <div class="feature-card">
+            <i class="fa-2x fa-solid fa-house"></i>
+            <p>Lorem ipsum dolor sit amet.</p>
+         </div>
+         <div class="feature-card">
+            <i class=" fa-2x fa-solid fa-horse"></i>
+            <p>Lorem ipsum dolor sit amet.</p>
+         </div>
+        </div>
+         <!-- to copy the content from above just use alt+shift+downkey -->
+        
+         
+        
 
+        </section>
     </main>
     <footer>
 
