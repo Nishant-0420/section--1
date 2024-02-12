@@ -2,3 +2,6 @@
     background-color: transparent;
     border: 3px solid black;
 }
+.space{
+    display: inline-block;
+}
