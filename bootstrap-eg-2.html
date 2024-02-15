@@ -21,6 +21,11 @@
             nav{
                 background-color: blueviolet;
             }
+			.my-img{
+				object-fit: cover;
+				object-position: center;
+				height: 300px;
+			}
         </style>
     </head>
 
@@ -2835,9 +2840,11 @@
                 
             </section>
             <section>
-                <div class="container"><div class="row">
+                <div class="container">
+					<div class="row">
                     <div class="col-md-4">
                         <div class="card">
+							<img class="card-img-top my-img" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxESEhUTEhMWFRUXGBgVFxcYFRgbGRgbFxgXGhsZFRsYHSggGBslHRYWIjEhJSkrLi8uFyEzODMsNygtLisBCgoKDg0OGxAQGzAmHyYvLS8wLS0tLS0vLystLS0tMC0tLS0tLS0tLS0tLS0tLS0vLS0tLS0tLS0tLS0tLS0tLf/AABEIALcBEwMBIgACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAABQIDBAYHAQj/xABLEAABAwIDBAYGBQgIBQUAAAABAAIRAyEEEjEFQVFhBhQicYGREzKSobHRB2JywfAWIyRCUnOy4RUzVJOis9LxU4KjwsMINEN0g//EABsBAQACAwEBAAAAAAAAAAAAAAAEBQECAwYH/8QAOhEAAQMCAwUGBAUDBAMAAAAAAQACEQMEEiExBUFRYXETkaGx0fAiUoHBBhQjMuEVQvEkcqLCM2KC/9oADAMBAAIRAxEAPwDuKIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIrHpZHYE3i9h5xfwRFfRWshMyTB3C0eIvK89E20gGNCbkeJuiK8isllO4ht9bC/fxQMbII3CAATHkLIivIrPaA/avyBj4E+SrbUBJANxqOCIq0Vp9SNLngNb/DxTtSdAItxnmiK6is5TaXH3X5GR8FVlN+0b6WFu63xRFcRWu1bQ8dR4jXyXnphv7N47Ue66IryIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiLHxOIZTGao5rGy1suIAlxDWiTvLiABvJCyEREWudItoVBUZQpGHPiTobmAAd2hkqPxLsVg3Mc6pna43GYkGNR2tDGhXF1YAnLIalTaVk57R8QBdoN5W5qhzwIk62HM8lT6ZsB02MRznRUC13QTeIGgO4eQ/Fl2UJehpMF1oMwCY5Tx+HxUZtnpBSw5DT2nkTlBiBxJ3KRc8lck+k8YmjWrVqDHVewyoYuKYjLLxrHYJgfcVLtaVJziapgAT10yUW5fVDQKIkkx01z99VuA+kPAgPNas2lkkGTMkatbAlzuQlS/R/buHxtEV8M/PTJLZgtILdQQ4SN3muJP8AovfUYK+LxrhUeAS0US4tLhOUy4REncAtz6BYups/BDDObTeWveWuaS0Q4z29S505uFoG5RKlxSaeAVhSsLh7R8M88gulotFPTWqfSBrWAs5E8eJ5LYui+1XYrDtquF5c0xocp1Uo03gEkREf8hiHeFFJaIzmZj/5dhPcfVTLXkb1SauewcWwbuA4bhNtbHXeO6iqd0wT58/9+YVZXItBWZV+nqQGxvm0Gd9t6vLDbBgHSQRyI4K/TdIkiOXcY8lzIhbAyoB1OlUrVRiCJbGRrnZQGETmbcTeZKy+jdQupOuXNFR7abjqWA2vv3jwWfisHSqQalNr40zNBjzVbMrQABAFgAIA7lxbTOKff1UupcNdTwCd3QQN3Xfp9d19FSHAqpdVFVlzSJLbk7ibeHD4Kprwe8ajeJ4q4rVRh1bAduJHuPJEV1FQx4MxuMHkVWiIiIiIiIiIiIiIiIiIiIiIiIiKlzQdRKt1KhBV0lUGoshYK1zpbgHnLXpTmZrGsAyHDuM+a1bHbUrVy0PdmOjQAAJNt282XSXPK1fpLTpYUNxTMLVr1A9rclASZcYzluluNrxPERqtuXGWnXVWlntJlJoFRsls4Tllyz98lsGGBDQAZaGho8BBM8/u5q6vA0Cw0FgvVMAhVE8UXP37G2jS2licS99J+DrZRlLnZ2hjMrA1pEC5M3gzK27au120QezncLkWt3k/cCtbxG3qlWAYDJkgAzw1J1WH6Z6aTunnwnmulF2GroSQMWEfuLd5aMsUbw2SBnCrw9Wlimw054dBAJlrhYtcBdrhvBTor0dw/oqoLTLcTimg53aCvUi081Y2Jt1tN1RzqYAdlzuESSJAn9qxOp0Cnei2IZUo1HsMg4jEn/rVB9yOtcH7xqss2yy5P+mqft4YmnOM4MGJHesHYGy6HpK4NJpIfEkTIyU3DXhnK2ShQYxoaxoa0aBoAA7gFA9G3y+o79upU/wRT/8AEtjWKei63Zdjgn3KovPKBHHUz8GqpWzAM3vDeVpInzPmri6KKvFdw7rkTeBbzE+73K0qKdYNJc4gN48o1PiT+CsP0QarMqlWyojEdImT2GF3MmPLVeUNv0yYc0t56jx3+5QW7Qtpw4x9u/RSjZV4nCffLVS8q7TqzbescOBEgyDoUU2JUWYWaiopOkKtc10Vl1iDYD9afcZ/GqvKh7QQQbgiD4pTcSLiDwRFWiIiIiIiIiIiIiIiIiLwlEQlWzUVJMrxbALUleL1eL1bLVCvF6V4iIona+2m4dzGup1DnmHhhNNsAntu0boBGpzWmDEsoXbhDiGG4Ak95/HvWtQkNyXe2pipUDTpv6KDxeLa1pquMjjxLjAHeSQPFa2MU7kBOgAHiI18VtdfYVPq1V8ZjIe0G4aaZm0b4lanSrvMy4Bo17IjuyxBPJSrFk0ziGuoVF+KrpxuqQpEjAJBGRmRPSICyJa8HdMHuIkDNO65UnsOlVosLWuGVz3PaQSC3OSXCI7QzS4GR60bpMSWtDhkNyAQ0iJkWgyfCfNbv0dxDKtAMc0F1OGwRu/VI4aR3hca7SyKU/Dq0/8AX6ajkpux61Ku997H6kYagGQMkRUA/wDbRw+bP+5WNitDXsaNACL/AGTrzWxrHo4Omwy1sHx+9ZC0Y3CIVjdVm1Xy0ZQit5IEA+d/C90dUAIB36eCqlbqOQVSaczNwdxAj+aheklY9hm4yT4afepxRW3cGXtDmiXNm3EHWOdlD2ix7rZ4Zr9t6lWTmtrtLtPvGS+dumnSPGuxNTK+rRpMe+nTyFzGnIS0mRGYktJ5KV6DdO6pqNw+KcXh5DWVD6wJ0Dv2geOv3drwsejaN0C3fc+9cy6b7P2b1+iGZuu1MRRe8AnK1oAJLgbAugaXm/fFfQout4LRk3Ua6eqmxVp1cWLU7+q6d0cxRk0zpEjkd/45KdK1/o3hyXGpuAIHMnh3D4rYCuuyS42wxc46e9FF2iGiucPKeqrw7oPesHpRtXquHdVHrS1rRxLiBpvtJ8FmUR2gsxWEta8FwkcOPJQS0uYQDB48FHbF2ia9MPNN9M6FrmkX4tkXbzWbTiXXm/lYWHx8VdVsTJsItHPjK5uIJJAgLdoIEEyriIiwtkREREREREREREVuodyuKwSshYK8Xkr1a9jesHEF1Jp7IDZNmkakGdRJK5XFfsQDBMmIGq6UaPakiQIE56LYF6qKRMDMADvAMgHkd6rXcFcShWBW2rQY4tc+HCxEOMeQWeVEbHdNXF8q7QO7q9B3xc7zWlTHlgIHUE+RG9b08GeOfoQPMHcr/wDTGH/4n+F3yVusGVm5qZki2hE74v3qTlRGxahNTGA6NxAa3kDh8O/+J7j4rUNqz8RBHIEHxcfJdA9jfiYCDzIPkAsTEYn0dGtOno3HuOUrnNDFAaFpB1FiCujbYxtJmJp0HDtVmOcOBLdWnvEnwXIOkmDpUcTUpUnh4bcx+oTf0ZO9wEeYm6uNl0GvcaTyQTm3KQRn5QfJU23bYXIbcMOmR5HL349JitiQTLnDzA/2WydG9psa/wBI14c2W06sHQVGAg+0H+yuX5VN9HHv/OtYGl7qZLQ4w0uaQQCR3lTNq7ObSs31cUlsO4aHPjoJUXYFNtG9bJydLT0IP3gjmAV3dFA9D8XWfhw3EFpqsgOLZy30jNfcdVPLz9GqKrA9uhV9Vpmm8sO5R+1y8NGUWBkneOBCt7JxE5mk3nMOc6/jms6pVA/FvxyCijQbmJBc0zIiIvvA3b9+5ZwuLsTV2ZWp9kab8uBjzUyoTpFtWrRpv9BTzuY3M9x9Sm0XvcZnRfKLxc2icx+L0Gs20jd39+kLHqVmzD4gyC3kbEeIJXcNIzKitcJyErUuj5diM9V1RzQXuzUmOIpucYcXdqXtkky1rg0ybXWubT2Bg37VdicRiqrMrqbgKdIENLGtGUukn9W8N3wqcb6fB1H0g9zRJAINntBgOHh4iVFelneuos2ucXf2nQDn79VbOa0tDV3/AAhpvptdSILCJbGkclWaBWlfRbtbNSqUHH+rdmb9l+4dzgT/AMwW+FwiZtrKivaabsKr3shxBVr1OZKvMdIlQtbpJhwYlzuYbb+fgpLCYplVodTcC38WI3LiKjXaHNbOoVKYlzSB0WUrNKJcRPrX8ABblb4q45wAk2C8pgwJ13rK0VaIiIiIiIiIiIiIiIvCrKvO0VlbNWrl4koof8m6HXuvy/03ovQRm7GWZ9WNfGOU3WywpdReI6R4NlV1F+IptqtALmF1wDBv4EeY4qUXzltqq4bRrl3rCvWmZmc1T3Ru5DkstEuA4lbMEmF35m2sK7SvSO/+sb81GbG2nh/S4w+mpXrtI/ONuOrYcSL3uD5Lk+yMZNZg4kj3FReExfaq/bH+WxSfy36mCdwPfPopZtAGgzqSO6PVfQP9K4fT09Kf3jfmoPY228K2rjc1emJxII7YuOq4USI1uCPBcowmO7bI/ab8QsY4qK2Kj/jH+CmPuT8t+oGE7pWfygw4p3x4St1+krabX1aNXC1hna14D2wSwyIMHvK0SnSDRFzvJJkkkkkuO8k3J5rLz5781SGar1FlRbTpMO+InfEkx3ryO0KhFd9MHIHxgD+FitdLi2DaJO6+4KT2CctdnefeCFHYVnaq/vB/l01K7GpA4ikDoajAY4F4BW9y3tbaow72vHgQFxt6op3FN3BzT4gldO6J1PzjxxYD5G3xK2hY2DwNOi3LTbHE7z3nesleBsaDqFEMcc/VevvKza1YvaMvRYOMZF/Hz195/wAXJYFR0EHwPj/OPepmqyR+PLxEhQ1Rly3Wbd4P8lZUjOSr6g3rypcfDvGnvWPiKWeCDCuYkmmzM8jgNe0eVo5qIG0Xg7omY7/euVe5oN+F+c8FNsbS6ce0o5RvO/lvXm1tnsqNayrEOJy3gy0Xy84P4haljOiVRr81N+dhgEQM4ibgEhrteI03q90rw+MxDs4qB7WmWUm9gM+yJ7TvrEyqOi/SGqa7MNiD6xyBzwQ5rj6odxBMDjfetqOIsxW75GpbvH0PvmrggxFwIPEaLaOhWyadCqHtc8uc0sObs8D6sW9Xeti6T13NoWNnOAPdBP3K1gdmVG1AXAAAzMi/cpDa2D9NSczQ6tPMafLxUaoX1Kbp1Kh1KlFl0x4IIETHv6rB2HsOhUoNe+XOdNw4jLciBHdvWH0XqlmKfTBlpzt5HIbO9x81r5xVanmp5nsvDmhxF+YU90GwpL31j6oblFtSYJjuAHtKuY4Oe0NEEaq1uKLqdGq+o+Q7QeXLuW41RMCJBse6PfuEc1eVmmP1rguix3W0t4+avKwXm0REREREREREREREREVhX1aqBbNKwVQvV4vVstFSuW9KtmUKuLqvdTGYuyEguE5bSYME21XUlzfb5/SKn7x33qq2rVqUmMNNxBncY3HgrbZNNr6jsQmB9wsHA7DwrIcGdq8HM/uO/wB/NUUuiuDaXkskPdmAzPsA1rYs69xM/WUrg9G9zvi1XaX6v2f9Kpm3tzE9o6f9zvX3KtnsbiiBkVGU+j+DaQ4U7i47bzpvjMrDei+Ea6o9zZzuz+s8QMrQRZ1xLSZ+spql+r9n/SoHa2OkCmzQCHHjp7rKx2ZTvr+47NlVw+Z2J2TZPPuG/pKr9o3tGyodo8dBxMe5O5RGPp0g8ii3KwaXJnie0SblYrWK+WHRTPRbYxxNdrCOw27/ALI3eOn+y+oNcy3pAEmGjU6mOPM+ZXzN76lzWJj4nn6Z/ZaxgmGHEiCalS3c4t/7VJ7JbFekeD2n/EFl7bAOIrFogGpUI9sq3smn+epfbb8Qstd+iJ4fZYc79fL5vuuz1XAAk6CSfBYWzNpsrhxYCMpgzz00We5WaNBjBDGtaCZgAC/Gy8WQ6RByXtQWYHAjPKDOnHJXViYjIwOe8gNAk293O+7n3LH6Q7dw+BomviX5KYIbYEkk6NaBqdfIrU9t9IRiQ30Yc2nAdDhlcSf2hugblzrVhTbO9d7K0dc1cA01J4D1Og/hU7U2k6s8uNho0cB8+KwzV/HDv4KN2jjDTpucAXO0a0XJc4w0eZClqYygDgqgy74jvXrQ1tP9Jg0Ay5bvIq0ysCJBBHEGQsfH4KlWbFQTwcCQ5vNrhcKN2tsvECu2vg3MaXf11N5IZU0h1gYfunu8ZhtIkC7bjTN57l3p21ZwD6QJ6blFdfWrXGlcODTwOhB3j3kug7Jrl9Gm4mSWiSd5FiTHEgrMWv7O2zh6dJjJPZbcx5nXSZWT+UWH4u8v5q6ZRq4RLTK8fVrUcZwOESY6SsPpnSwtOi7E4h/ogyJqBpcbkNALRd1yAPkpro4aD8PRfhyTSLczDpnDh67hrJvY8dLCMX0mGxjH0ntbVYYz03tBBuCJBtqAeVlN4bDspsbTptDGNAa1rQA1oAgAAWAAUd9MNfMQV3bcPfTDMUtGnD35K+iItVhERERERERERERERERF4RK9REWOQrGNxTaVN1R/qsGYxwVVYlzy0HKA0OJEScxcAL6DsnzVNEnM6m45oDTJAuHZhBix9U+a3DhOYWCwxkc15gcWytTbVZOV4zCRBhc76QH9Iq/vHfeulgLmPSE/pNX9474lVG247NsfN9irfYgPaP8A9v3CycFo3ud/EFepfq/Z/wBKsbPPZb3O/iCvUT6v2f8ASvPj9vvmrWp+89fRYuNqEMbGpbE8PVUM6l5qaxtF8NkQIEeW/gsSnS89/wCOC+lbAofl7Noj4nSTGfQHmBqNxnmV8/25UNa7MzDQAJy6noTv3iOCwaeFJIAEkmOZJXSdg7LGEoGYzkZ6h5gTA5D58VHdEtlN/rnXIJDRw4u77rYNoiaVQDXI/wDhKze3fakU2H4fM/x59FiytOyBqOGfl/ny6rk/oibnU3PesvZGHnEUfts/jCvehUh0ew04inyJd7IJ+MK2rVcLHHkVV0aUvaOYW3ba2tSwtMVKphpc1gMGMztMx0YCbSbSQNSFZwu3KbjDgWHzHuv7lI4rDsqMdTqND2PBa5rhIcDYgjguX7UpP2VVbTquc7B1DloV3Ek0XH/4azt4j1XncL6W8Vdm4pxUpZgatjxG/wCi9jbCi8llXInQz57lsfSanQx/o6L5ApVhWbYQ8tpvaJ5AvDo35ea17F4V7DDxHPceYKvbS23TwlN+IqjMGtsARJJsAJ4zrwXNHbfr4nabH1XGAwhrR6rA6lmho333nWAo1k11+AXHMujTie7L/Oatal2zZbThbOUkTwGs5+9OK6HTgQdTu5brc7nzWS5x3iO9U9FXtc5xOrQI8Zk/jis3bjbtdxEHwuPvV7ta0ZRtxTpj9hnmZ19T0hU2wdoVbm9dVrO/8gI6RmI6QQO9YYfHu+Kp6yrDna9xWBhdpuYZGul/xyW+wsZtqmASQcgTGo4wY01grT8VhlO6ol5gOaQTE6HhlOql+sp1lReJ2pn/AFYMahY/W1fUGVHsmozCeEh3iMl5OvWpMfFN+IccJb4HNb30HqZq7x9Sfe1beMfSL/Rh4L/2Zvb7+S5T0f2w+kauSznNgH9mSCSOdltHQjAFz3V3eq0ENJ3k7/AfFVG0KEVHPccgBCmWm0SX07ek2SSS7kNfe7d03pFhUNo0XuysqNc7gDOnDis1VUFXzXBwkGeiIo/Z5ry/0wbGbsZf2efu56qQWoMiV0e3CYkHoiIiytURERERERERERFjV8MHEODi1wtLYmOBBBB8QmHw4bNy4m5cdT5WHcLKKf0pwjXFpebEgnI6JFjulRu2Nt1WOFWhVD6MAFsAx9r9YTxXVtu8mCI6qFU2lQYwkODo1DSCQOMTMDetqdTXLOkR/Sav7x3xK6LsTa7MQzMLOFnN4d3EHiucdIz+lVf3rviVS7aBFNoPzfYr0n4feyq5z2GQW/dZGCeA1pJgAOJJ7wqBtBoyxeBF/D5KN2nswYrCuokluYOAIOhzAgm4kSLha5gsY+DTqyKtM5Kg+sB6w4tcLg813/DNha3dQ9qZcMw3d1PHw+qi/iW8urVoNEQ0kyd46cPei3+ltlps4RPH5LxrgSCBEg/9qgNhYjW4kGLkSZDdJI5qbEjLaYEWjlx7lrt+4NGubekHMG/Mw7fI5fUzvXTY7HXFu2tXIedR8Ils7ieP0H1W49FGk4cd5+AUwaZUX0P/APbj7R+AU4pFk7/Ts6DyUW7b+u/qVzzG7NLaj2gwA4wLWE2FxwUz0XwWUPeRcnKCY01MR3jyWo9LOkj2YmsxrYyuMnUmOA0Cmvo+2k99Oo/EVQKchrA7I0T+sbAb4AvuKvqrLltvjqwAYjifMdVVg2XahtDEXDX5Rx1g66QtyWJtbZ1LE0n0azA+m8ZXNO8cuBBgg7iFlUK1OoCadRrwLHK4OA8lcdRKrpCkrif0q9HGYDY9Gi176uXEtGd8ZsuStlbbcBA8PAc42YYxzfsD/JC7H/6hGkbNp/8A2Wf5dZcYwZ/TW/Y/8AW9o0CvTA+Zvmtbkl1F8/KfJb/hMc+m4OY6D8e/ipJu3atVzWvjKToG+E8fLiVrXpFcp1yCCDBGi9nXtGV2FrgMwRn/ABn6LzNrXqW9RtRhIwkHu6re6mzmgO/Ohzg1xADbSATqe5avsvCvr1BSpluZ0xmMCwn8QttwPapMeYlzATwuO/5rSXV3UK8ts6m8Ef8ALpruXkvwrWe78xRgB4jiR/cN+eRjPmF6n8UjtjQrEktzG4awft4LpeyPo9pth1d5ef2W2b4nU+7uWodMtm9WxLmgQx3bYLWB1HdIPhCmdrfScSMuGpxb13/c0H3z4LSdpbXrYh2atUc87p0E8ALDwV7Y0b01e0rnKND9gMh5qgvPygp9nRGc6j11KlOj1PPUcJyiJc46C4k/y3lbHtPaxewUacsotsBvdzfxJ1jRafsB8vd9n7wtswGNbSM06YfU3OdceDBv5knuC437YrTExEevBUj3Q40w7CCBJzJI4ADOOI37zEBbH0Q2E5rhWqiLdhp1uIk8Lbuar2iMT1g5Q/1uwROWJtyjio7D1tqVnS0vA4kBoHmBPvW84fNlbmILoGYjQmLx4rzW0bZ1eMT9/wDafBeu2DcU6DCylScBxeIknfr3jhkroXqIinoiIiIiIiIiIiKzUrtbrPg1x+AVPXGfW9h/yWQiIoPaOz8JVl1Sm6dSQyoCfZHaPmtRx+zQCfQUMTwlzXD3BswulIu1Ou5migXWzqFxmQAeIAnvIXOOjlPEUK7SaNQNJh/5t0X3m24wfBWvpEoYrrWEq4LC+ma5zmYhppvgyaeVz4giAHw7cumLHOFYTN/ad81pXeKxlwHvqutha/kmFlNzo68ddIyWodMtm5cDW6jRPWAGupgMfJh7S4CReWhw5ytW2x0cr4nA0cZ1b0WPY0+moMY+KrMx7MGYeBDgJ1Jbvt1jqjOftO+adUZz9p3zXOkBSeKlMAEaEAKXVc6q0tqEkHiSvn/+iMd/YcX/AHLl0HaGyqzdkEUabuuim1zew7NOcOLLiC4Mlq3/AKmzn7TvmnVGc/ad81Nvb6peMDKobAM6co3yo1rbNtnF1MkE5a+kKC6F46s7B0jiqHoK5Ds9NtN4A7ToMXgkQYnep3rbPrew/wCSuMpgCBMd5PxVvqbOftO+ahARkFImTJXCNq4XH1sRWqOwOLGao9wPoTBGYxEX0jcsU7Ix39ixR/8Awd96+geqM5+075p1RnP2nfNXDNtXLGhoDcuXoVAds2i4kmc+f8Ll/wBFtDFUcRU9Nh69GmaRu+k4AuD25QI3wXe9bztrDPruoup4irRFKo2o5raTi2rB9SpYHLE2B1M3gKYZh2gyJn7TvvK9qUGuMmfaI+BVfc3D7ioaj9ctOSlUaTaTcDdFz76atl1sbs9tPDU31HsrMqlgY6S0Ne05ZFz2wY4ArkNPodtIYltTqWIylrZPonW/NhpBEbiF9O9UZz9p3zTqjOftO+a506hpvDxqCD3LdzcTS0718/8A5N4/+yV/7p/yT8nMdvwmI/uX/JfQHVGc/ad806ozn7Tvmrr+v1/lHj6qB/TaXErktLFVaYDWbN2g6ABPoButcl6gto4DG4ioag2fiaWgh1NxLvrdkW3DwXd+qM5+075p1RnP2nfNUOzgLGua9OS4zMk5zmZiN+atLuobql2T9MogaR7hfP8A+TeP/slf+6f8k/JvH/2Sv/dP+S+gOqM5+075p1RnP2nfNX39frfIPH1VX/TKXE+HouJbB6P4xjnF+GqtsBem/wCS2TCYHFC2WszmKVSPcJ9y6ZTohuk+JJ+JV1Qq+0alZxcQPfVcHbFouqY8Tu8DyAPitY2JhatI5n4h72x6hpVN/eJHkp/rjPrew/5LIRQXOLjJVnRotpNwtmOZJ8ySsfrjPrew/wCSDFs+t7D/AJLIRarqiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIv//Z" alt="">
                             <div class="card-body">
                                 <h3 class="card-title">Title</h3>
                                 <p class="card-text">Text</p>
@@ -2846,6 +2853,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="card">
+							<img class="card-img-top my-img" src="https://img.freepik.com/free-vector/online-app-tourism-traveler-with-mobile-phone-passport-booking-buying-plane-ticket_74855-10966.jpg" alt="">
                             <div class="card-body">
                                 <h3 class="card-title">Title</h3>
                                 <p class="card-text">Text</p>
@@ -2854,6 +2862,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="card">
+							<img class=" card-img-top my-img" src="https://img.freepik.com/premium-vector/female-character-sits-packed-suitcases-woman-is-planning-summer-vacation-route-map-tourist-with-backpack-is-ready-go-journey-online-application-choosing-optimal-tour_776652-2240.jpg" alt="">
                             <div class="card-body">
                                 <h3 class="card-title">Title</h3>
                                 <p class="card-text">Text</p>
@@ -2865,6 +2874,75 @@
                 
                 
             </section>
+			<section>
+				<!-- to have dark carousel i.e. > use carousel-dark -->
+				<div id="carouselId" class="carousel slide carousel-dark" data-bs-ride="carousel">
+					
+					<div class="carousel-inner" role="listbox">
+					<!-- data-bs-interval="1000" to have the interval time for slide to next slide 1000means 1 second-->
+						<div class="carousel-item active " >
+							<div class="container py-4">
+							<div class="col-8 mx-auto">
+								<img class="w-100 rounded-circle" src="male_cat.jpg" alt="">
+								<h3 class="text-center my-3">billu sanda</h3>
+								
+							</div>
+							<p class="text-center"> billu sanda is a don of billu gang and rules in shatann choraha and known as the king of billas . he is the don is do not need any introduction for any queries cuz its billu sandha.</p>
+						</div>
+						</div>
+						<div class="carousel-item " data-bs-interval="1000" >
+							<div class="container py-4">
+							<div class="col-8 mx-auto">
+								<img class="w-100 rounded-circle" src="male_cat.jpg" alt="">
+								<h3 class="text-center my-3">billu sanda</h3>
+								
+							</div>
+							<p class="text-center"> billu sanda is a don of billu gang and rules in shatann choraha and known as the king of billas . he is the don is do not need any introduction for any queries cuz its billu sandha.</p>
+						</div>
+						</div>
+						<div class="carousel-item " data-bs-interval="1000">
+							<div class="container py-4">
+							<div class="col-8 mx-auto">
+								<img class="w-100 rounded-circle" src="male_cat.jpg" alt="">
+								<h3 class="text-center my-3">billu sanda</h3>
+								
+							</div>
+							<p class="text-center"> billu sanda is a don of billu gang and rules in shatann choraha and known as the king of billas . he is the don is do not need any introduction for any queries cuz its billu sandha.</p>
+						</div>
+						</div>
+						<div class="carousel-item " data-bs-interval="1000">
+							<div class="container py-4">
+							<div class="col-8 mx-auto">
+								<img class="w-100 rounded-circle" src="male_cat.jpg" alt="">
+								<h3 class="text-center my-3">billu sanda</h3>
+								
+							</div>
+							<p class="text-center"> billu sanda is a don of billu gang and rules in shatann choraha and known as the king of billas . he is the don is do not need any introduction for any queries cuz its billu sandha.</p>
+						</div>
+						</div>
+						
+					</div>
+					<button
+						class="carousel-control-prev"
+						type="button"
+						data-bs-target="#carouselId"
+						data-bs-slide="prev"
+					>
+						<span class="carousel-control-prev-icon " aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button
+						class="carousel-control-next"
+						type="button"
+						data-bs-target="#carouselId"
+						data-bs-slide="next"
+					>
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+				
+			</section>
         </main>
         <footer>
             <!-- place footer here -->
