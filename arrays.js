@@ -17,6 +17,8 @@ console.log(arr)
 arr.pop() //remove element from end
 arr.shift() //remove element from start
 console.log(arr)
+arr.splice(4,0,"bong") //(index jaha per add karna ho,removing no. of element,value of element added)
+console.log(arr)
 
 
 
