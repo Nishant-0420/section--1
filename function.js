@@ -25,7 +25,7 @@ const findfact= (n)=>{
     for( let i=1;i<=n;i++){
         a=a*i
     }
-    console.log(a)
+    // console.log(a)
     return a
 }
 findfact(3)

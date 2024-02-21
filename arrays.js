@@ -19,6 +19,20 @@ arr.shift() //remove element from start
 console.log(arr)
 arr.splice(4,0,"bong") //(index jaha per add karna ho,removing no. of element,value of element added)
 console.log(arr)
+// to print array element outside of array
+for(let w of arr){
+    console.log(w)
+}
+// both above and below do same things i.e. just printing the element of an array
+// forEach()  and under forEach() we give function
+arr.forEach((element)=>{
+        console.log(element)
+})
+
+// map() function
+q=[2,3,4,6,7]
+const map1=q.map(x=>x*2);
+console.log(map1)
 
 
 
