@@ -45,7 +45,7 @@ const myphone={
     brand:"iqoo",
     model:"z6 pro",
     varient:{
-        '8bg': 43000,
+        '8gb': 43000,
         "16gb": 55000
     }
 }
@@ -79,9 +79,24 @@ console.log(phonelist[2])
 phonelist[phonelist.length-1].model="v70"
 console.log(phonelist[2])
 console.log(phonelist[phonelist.length-1])
-phonelist.splice(-1,)
 
+
+                                                
+// assignment
 // find sum of all prices
+let c=0
+phonelist.forEach( x=>{
+    c+=x.price
+})
+console.log(c)
+
+
 // get models of smartphone in an array
+const model=phonelist.map(m => m.model)
+console.log(model)
+
+// note with map we can get only that value which we want but using filter will apply condition and the 
+// one who passes will get added to new array and in above if we use filter then their is no condition we 
+// are getting whole array
 
 
