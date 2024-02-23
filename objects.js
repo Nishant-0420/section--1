@@ -94,6 +94,7 @@ console.log(c)
 // get models of smartphone in an array
 const model=phonelist.map(m => m.model)
 console.log(model)
+// newarray=phonelist.push(phonelist.model)
 
 // note with map we can get only that value which we want but using filter will apply condition and the 
 // one who passes will get added to new array and in above if we use filter then their is no condition we 
